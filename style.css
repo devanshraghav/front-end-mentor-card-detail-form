@@ -4,8 +4,103 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 main {
   display: flex;
+}
+
+.left {
+  background-image: url(./images/bg-main-desktop.png);
+  width: 25%;
+  height: 100vh;
+  position: relative;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+}
+
+.card-front {
+  background-image: url(./images/bg-card-front.png);
+  width: 21.7rem;
+  height: 12rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 20%;
+  left: 35%;
+  color: hsl(0, 0%, 100%);
+  padding: 0 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.dot1{
+  background: hsl(0, 0%, 100%);
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 100%;
+}
+.dot2{
+  border-color: hsl(0, 0%, 100%);
+  border: 1px solid;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+}
+
+.front-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-num {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.front-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.front-details div {
+  display: flex;
+}
+
+.front-details p {
+  font-size: .7rem;
+}
+
+.card-back {
+  background-image: url(./images/bg-card-back.png);
+  width: 22rem;
+  height: 12rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 55%;
+  left: 60%;
+}
+
+.cvc-number {
+  position: absolute;
+  top: 44%;
+  right: 14%;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .2rem;
 }
 
 .error {
