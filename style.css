@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+}
+
+.error {
+  color: red;
+}
+
+.card-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.right form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.card-info {
+  padding: 0.4rem;
+  width: 20rem;
+}
+
+.card-imp-data {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-date-inputs {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.card-date-inputs input {
+  width: 4rem;
+  padding: 0.4rem;
+}
+
+.cvc {
+  display: flex;
+  flex-direction: column;
+}
+
+.cvc input {
+  width: 10rem;
+  padding: 0.4rem;
+}
+
+.submit {
+  width: 20rem;
+  padding: 0.4rem;
+}
