@@ -55,6 +55,7 @@
               class="card-info"
               placeholder="e.g. Jane Appleseed"
               id="card-name"
+              oninput="cardNameInput(this)"
             />
             <div class="error"></div>
           </div>
@@ -80,7 +81,7 @@
                   name="exp-month"
                   placeholder="MM"
                   id="exp-month"
-                  oninput="numberInput(this)"
+                  oninput="cardExpiryMonthInput(this)"
                   maxlength="2"
                 />
                 <input
@@ -88,7 +89,7 @@
                   name="exp-year"
                   placeholder="YY"
                   id="exp-year"
-                  oninput="numberInput(this)"
+                  oninput="cardExpiryYearInput(this)"
                   maxlength="2"
                 />
               </div>
@@ -102,7 +103,7 @@
                 name="cvc"
                 id="cvc"
                 placeholder="e.g. 123"
-                oninput="numberInput(this)"
+                oninput="cvcInput(this)"
               />
             </div>
           </div>
