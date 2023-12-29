@@ -121,10 +121,13 @@ input {
   border: 1px solid hsl(270, 3%, 87%);
   padding: 0.8rem;
   border-radius: 0.5rem;
+  outline: none;
 }
 
 input:focus {
-  border-image: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
+  border: 1px solid transparent;
 }
 
 .right form {
@@ -176,23 +179,19 @@ input:focus {
 
 .submit {
   width: 100%;
-  padding: 0.7rem;
+  padding: 0.8rem;
   text-transform: capitalize;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 0.5rem;
 }
 
-@media screen and (min-width: 768px) {
-  .left {
-    position: relative;
-    width: 25%;
-  }
-  .right {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-  }
+.submit:hover {
+  cursor: pointer;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   main {
     display: block;
   }
@@ -288,5 +287,45 @@ input:focus {
   .right {
     margin-top: 5rem;
     padding: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .left {
+    position: relative;
+    width: 25%;
+  }
+  .right {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .left {
+    width: 30%;
+  }
+  .card-front {
+    width: 19rem;
+    height: 12rem;
+  }
+  .card-back {
+    width: 19rem;
+  }
+  .right {
+    width: 40%;
+    left: 59%;
+  }
+
+  .logo {
+    margin-bottom: 2.5rem;
+  }
+  .card-num {
+    font-size: 1.1rem;
+  }
+
+  .cvc-number {
+    top: 38%;
   }
 }
