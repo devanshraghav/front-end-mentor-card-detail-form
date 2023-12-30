@@ -47,7 +47,7 @@
         </div>
       </section>
       <section class="right">
-        <form>
+        <form id="form-submit">
           <div class="card-holder-name card-holder">
             <label for="card-name">cardholer name </label>
             <input
@@ -57,7 +57,7 @@
               id="card-name"
               oninput="cardNameInput(this)"
             />
-            <div class="error"></div>
+            <p class="error"></p>
           </div>
 
           <div class="card-holder-number card-holder">
@@ -69,7 +69,7 @@
               id="card-number"
               oninput="cardNumberInput(this)"
             />
-            <div class="error"></div>
+            <p class="error"></p>
           </div>
 
           <div class="card-imp-data">
@@ -93,6 +93,7 @@
                   maxlength="2"
                 />
               </div>
+              <p class="error"></p>
             </div>
 
             <div class="cvc">
@@ -105,10 +106,23 @@
                 placeholder="e.g. 123"
                 oninput="cvcInput(this)"
               />
+              <p class="error"></p>
             </div>
           </div>
-          <button class="submit" onclick="">confirm</button>
+          <button class="submit">confirm</button>
         </form>
+
+        <!-- Complete state -->
+        <div class="complete-state">
+          <img
+            src="./images/icon-complete.svg"
+            alt="complete-state-icon"
+            class="complete-state-icon"
+          />
+          <h2>Thank You!</h2>
+          <p>We've added your card details</p>
+          <button class="submit" value="Continue">Continue</button>
+        </div>
       </section>
     </main>
 
