@@ -113,6 +113,7 @@ main {
   padding-left: 0.5rem;
 }
 
+
 form label {
   text-transform: uppercase;
   color: hsl(278, 68%, 11%);
@@ -132,6 +133,13 @@ input:focus {
   background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
   border: 1px solid transparent;
+}
+
+.errorBorder{
+  border-color: hsl(0, 100%, 66%);
+}
+.errorBorder:focus{
+  border-color: hsl(0, 100%, 66%);
 }
 
 .right form {
@@ -193,17 +201,13 @@ input:focus {
 
 .submit:hover {
   cursor: pointer;
+  background-color:  hsl(276, 21%, 14%);
 }
 
 /* Complete-state */
 
-.thanks{
-  display: none;
-}
-
 .complete-state {
   display: none;
-  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
